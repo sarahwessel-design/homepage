@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thesis Project Site</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <style>@font-face {
+      font-family: W95FA;
+      src: url("W95FA.otf");
+    }
+    </style>
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+  </head>
+  <body style="font-family:W95FA;">
+    <div class="desktop">
+      <div class="window" id="appWindow">
+        <!-- Title bar -->
+        <div class="title-bar">
+          <span>Aisle K-12: School Safety</span>
+          <div class="title-buttons">
+            <button onclick="closeWindow()"><svg
+              class="close-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="12px"
+              viewBox="0 0 138.2 133.62"
+            >
+              <rect
+                x="55.42"
+                y="-10.39"
+                width="32.13"
+                height="154.57"
+                transform="translate(-26.37 70.14) rotate(-45)"
+              />
+              <rect
+                x="50.65"
+                y="-10.57"
+                width="32.13"
+                height="154.57"
+                transform="translate(66.72 -27.64) rotate(45)"
+              />
+            </svg></button>
+          </div>
+        </div>
+
+        <!-- Menu bar -->
+        <div class="tabs">
+          <button style="font-family:W95FA;" class="tab active" onclick="openTab('images')">Images</button>
+          <button style="font-family:W95FA;" class="tab" onclick="openTab('description')">
+            Description
+          </button>
+        </div>
+
+        <!-- Panels -->
+
+        <div class="tab-content active" id="images">
+          <img id="viewer" src="DSC_8136.jpg" />
+        </div>
+
+        <div class="tab-content" id="description">
+          <div class="description-text">
+            <p style="font-family:W95FA;">
+              <strong>Aisle 12: School Safety</strong> is an installation that
+              uses the familiar, comforting format of a cereal box to confront
+              the disturbing normalization of gun violence in U.S. schools. By
+              recreating a grocery store display, the project critiques how mass
+              shootings and school safety drills have become embedded in the
+              cultural “daily routine.” The work juxtaposes playful, commercial
+              design with dark, sobering content to expose the unsettling
+              contrast between childhood innocence and contemporary realities.
+              The bright colors and cheerful graphics initially evoke nostalgia
+              and comfort, but closer inspection reveals language that
+              references preparedness, drills, and vigilance. This tension
+              between appearance and meaning reflects the broader cultural
+              dissonance surrounding school safety today.
+            </p>
+
+            <p>
+              At the center of the installation is a parody cereal box displayed
+              on a grocery-style rack, positioned as though it were an everyday
+              household staple. The title, <strong>Aisle 12</strong>, references
+              the K–12 education system, suggesting that fear and
+              over-preparedness now span a student’s entire academic journey,
+              from kindergarten through graduation. The grocery aisle format
+              reinforces the idea that school safety has become something
+              “stocked,” standardized, and circulated like a consumer good,
+              treated as a product to be purchased rather than a systemic issue
+              to be resolved. The display mimics the visual strategies of
+              corporate marketing: bold fonts promise reassurance, smiling
+              graphics soften harsh realities, and promotional slogans advertise
+              preparedness as if it were a desirable feature. By borrowing the
+              language of advertising, the installation highlights how
+              institutional responses to violence often emphasize visibility and
+              reassurance over structural change.
+            </p>
+
+            <p>
+              Socially and culturally, the project addresses how gun violence in
+              schools has shifted from a shocking anomaly to an anticipated
+              possibility. Students grow up practicing emergency drills
+              alongside fire drills, absorbing a heightened awareness of danger
+              as part of their education. Politically, the installation
+              critiques how responses to school violence frequently manifest as
+              incremental, consumer-like “upgrades”—bulletproof backpacks, upped
+              security, new protocols—rather than comprehensive gun reform. By
+              presenting safety as a marketable commodity, the work questions
+              whether reassurance has replaced resolution.
+            </p>
+
+            <p>
+              Through humor, irony, and visual familiarity,
+              <strong>Aisle 12: School Safety</strong> invites viewers to
+              reconsider how crisis becomes normalized when packaged
+              attractively. The comforting design draws audiences in, only to
+              confront them with the gravity of the issue. Ultimately, the
+              installation asks: when safety is marketed like a product, what
+              does that reveal about the culture that consumes it—and what might
+              it take to remove it from the shelf altogether?
+            </p>
+          </div>
+        </div>
+
+        <div class="tab-content" id="instagram">
+          <div class="panel-frame">
+            <div
+              class=
+            ></div>
+          </div>
+        </div>
+
+        <!-- Status bar (your arrows go here) -->
+        <div class="status-bar" id="statusBar">
+          <button onclick="prevImage()">◀</button>
+          <span id="status-text">Image 1 of 7</span>
+          <button onclick="nextImage()">▶</button>
+        </div>
+      </div>
+
+      <!-- SIDEBAR ADS -->
+      <div class="sidebar">
+        <div class="title-bar">Advertisements</div>
+
+        <div class="sidebar-coupon">
+          <img  src="coupon1.jpg"/>
+        </div>
+
+        <div class="sidebar-coupon">
+          <img  src="coupon2.jpg"  />
+        </div>
+
+        <div class="sidebar-coupon">
+          <img src="coupon3.jpg"  />
+        </div>
+      </div>
+    </div>
+    <div id="popup-container"></div>
+    <script src="script.js"></script> 
+  </body>
+</html>

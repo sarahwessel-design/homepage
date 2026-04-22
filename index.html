@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sari's Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @font-face {
+        font-family: Broken Console;
+        src: url("https://cdn.glitch.global/191b70e6-6336-415d-b655-f330928bd33a/Broken%20Console%20Bold.ttf?v=1739218716807");
+      }
+      h1 {
+        font-family: Broken Console;
+      }
+      @font-face {
+        font-family: W95FA;
+        src: url("W95FA.otf");
+      }
+    </style>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+  <body class="background">
+    <div id="bootScreen" class="boot-screen">
+      <p>Starting Windows 98...</p>
+    </div>
+
+    <div class="window">
+      <div class="window-title" style="font-family: W95FA">
+        <span>Sari's Site</span>
+    
+      </div>
+    
+      <div class="textinwindow" style="font-family: W95FA">
+        <p>Would you like to proceed?</p>
+        <div class="buttoncontainer">
+          <button class="yes" id="startYes">Yes</button>
+          <button class="no" id="startNo">No</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ✅ NOW OUTSIDE -->
+    <div class="window1">
+      <div class="windowtitle" style="font-family: W95FA">
+        <span>Sari's Site</span>
+        <p class="content">Take me back to 2002</p>
+        <div class="button-container">
+          <button id="GoButton" class="yes">Go</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="window3" id="myPresentation" style="display: none">
+      <div class="windowtitle1" style="font-family: W95FA">
+        <button type="button1" class="buttonxg" id="myButton5">
+          <svg
+            class="close-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12px"
+            viewbox="0 0 138.2 133.62"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  stroke: #231f20;
+                  stroke-miterlimit: 10;
+                }
+              </style>
+            </defs>
+            <rect
+              class="cls-1"
+              x="55.42"
+              y="-10.39"
+              width="32.13"
+              height="154.57"
+              transform="translate(-26.37 70.14) rotate(-45)"
+            />
+            <rect
+              class="cls-1"
+              x="50.65"
+              y="-10.57"
+              width="32.13"
+              height="154.57"
+              transform="translate(66.72 -27.64) rotate(45)"
+            />
+          </svg>
+        </button>
+        <span>Sari's Site</span>
+        <p class="content" style="font-weight: regular">
+          <iframe
+            src="https://docs.google.com/presentation/d/e/2PACX-1vTbpOk6T41Ju10Y809P2wUjEpDIip727YwV-mRmFtVMIuz80DDZUbUuYnNlzyGwFsIIyX9fdDXuA-Lc/pubembed?start=true&loop=true&delayms=5000"
+            frameborder="0"
+            width="480"
+            height="299"
+            allowfullscreen="true"
+            mozallowfullscreen="true"
+            webkitallowfullscreen="true"
+          ></iframe>
+        </p>
+        <div class="button-container"></div>
+      </div>
+    </div>
+
+    <div class="window6" id="myPortfolio" style="display: none">
+      <div class="windowtitle6" style="font-family: W95FA">
+        <button type="button1" class="buttonxgg" id="myButton9">
+          <svg
+            class="close-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12px"
+            viewbox="0 0 138.2 133.62"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  stroke: #231f20;
+                  stroke-miterlimit: 10;
+                }
+              </style>
+            </defs>
+            <rect
+              class="cls-1"
+              x="55.42"
+              y="-10.39"
+              width="32.13"
+              height="154.57"
+              transform="translate(-26.37 70.14) rotate(-45)"
+            />
+            <rect
+              class="cls-1"
+              x="50.65"
+              y="-10.57"
+              width="32.13"
+              height="154.57"
+              transform="translate(66.72 -27.64) rotate(45)"
+            />
+          </svg>
+        </button>
+        <span> Sari's Site</span>
+        <div class="content1">
+          <div class="figma-wrapper">
+            <iframe
+              class="figma-frame"
+              src="https://embed.figma.com/deck/X0tSzd2vt9l3nv5HANSVvL/Portfolio?node-id=1-42&embed-host=tubby-site&footer=false&page-selector=false&viewport-controls=false"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="window4" id="myCollection" style="display: none">
+      <div class="windowtitle12" style="font-family: W95FA">
+        <button type="button1" class="buttonxg" id="myButton6">
+          <svg
+            class="close-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12px"
+            viewbox="0 0 138.2 133.62"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  stroke: #231f20;
+                  stroke-miterlimit: 10;
+                }
+              </style>
+            </defs>
+            <rect
+              class="cls-1"
+              x="55.42"
+              y="-10.39"
+              width="32.13"
+              height="154.57"
+              transform="translate(-26.37 70.14) rotate(-45)"
+            />
+            <rect
+              class="cls-1"
+              x="50.65"
+              y="-10.57"
+              width="32.13"
+              height="154.57"
+              transform="translate(66.72 -27.64) rotate(45)"
+            />
+          </svg>
+        </button>
+        <span>Sari's Site</span>
+        <p class="content" style="font-weight: regular">
+          <iframe
+            class="pinterest"
+            src="https://petracoding.github.io/pinterest/board.html?link=saw289/collection-design-2b/&hideHeader=1&hideFooter=1&transparent=0"
+            style="left: 15px; justify-content: center"
+          ></iframe>
+        </p>
+        <div class="button-container"></div>
+      </div>
+    </div>
+
+    <div class="window5" id="myBio">
+      <!-- TITLE BAR -->
+      <div class="windowtitle13" style="font-family: W95FA">
+        
+    
+        <span> About Me.txt </span>
+      </div>
+    
+      <!-- 👇 MOVE THIS OUTSIDE -->
+      <div class="bio-content">
+        <p style="font-family: W95FA">I’m a designer interested in digital nostalgia, internet culture, and design as a kind of problem-solving playground. I love early web aesthetics, scrapbook style visuals, and the weird, layered feeling of online spaces. My work often mixes retro interfaces with contemporary ideas, creating visuals that feel familiar but a little unexpected.
+          </p>
+          
+          <p style="font-family: W95FA">
+          I enjoy working with code and digital tools because it feels like solving a puzzle—experimenting, breaking things, and putting them back together in new ways. A recent project exploring the environmental impact of music streaming used a Windows 98-inspired interface, which pushed my interest in webcore and how we consume information online.
+          </p>
+          
+          <p style="font-family: W95FA">
+          I aim to make work that’s clear, engaging, and a little playful—something that invites people to pause, explore, and maybe feel a bit nostalgic along the way.
+          </p>
+      </div>    
+    </div>
+
+    
+      <!-- 👇 MOVE THIS OUTSIDE -->
+      <div id="myContact" class="modal-content">
+        <div class="windowtitle17" style="font-family: W95FA">
+        
+    
+          <span> Contact Me! </span>
+          <span id="closeContact" class="close">&times;</span>
+        </div>
+        
+    
+        <p>Email: wessel3sarah@email.com</p>
+      
+    
+        <!-- optional form -->
+        <form>
+          <input type="email" placeholder="Your email" required />
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>  
+    </div>
+
+    <div class="window4" id="myResume" style="display: none">
+  
+      <!-- TITLE BAR (unchanged, SVG stays) -->
+      <div class="windowtitle12" style="font-family: W95FA">
+        
+        <button type="button1" class="buttonxg" id="myResumeClose">
+          <svg
+            class="close-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="12px"
+            viewbox="0 0 138.2 133.62"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  stroke: #231f20;
+                  stroke-miterlimit: 10;
+                }
+              </style>
+            </defs>
+            <rect
+              class="cls-1"
+              x="55.42"
+              y="-10.39"
+              width="32.13"
+              height="154.57"
+              transform="translate(-26.37 70.14) rotate(-45)"
+            />
+            <rect
+              class="cls-1"
+              x="50.65"
+              y="-10.57"
+              width="32.13"
+              height="154.57"
+              transform="translate(66.72 -27.64) rotate(45)"
+            />
+          </svg>
+        </button>
+        <span> Resume.txt </span>
+      </div>
+    
+      <!-- 👇 MOVE THIS OUTSIDE -->
+      <div class="resume-content">
+        <div class="resume-inner">
+          <iframe src="Wessel_ResumeforATS.html"></iframe>
+        </div>
+      </div>
+    
+    </div>
+    
+      </div>
+    </div>
+
+    <div class="imageclass">
+      <img src="paint-text box pink.png" alt="text box" class="textboxpink"/>
+      <div class="resume-shortcut" id="resumeShortcut">
+        <img class="notebookresumeicon" src="notebook icon.png" alt="resume icon"/>
+        <p>Resume.txt</p>
+      </div>
+      <img src="other system menu.png" class="system1"/>
+      <img src="loading window.png" class="loading"/>
+      <img src="icon computer.png" class="computericon"/>
+    </div>
+    <div class="nav" style="text-decoration: none">
+
+      <div class="boxhome" id="myhomebutton">
+        <a href="#" style="font-family: W95FA">Contact</a>
+      </div>
+    
+      <div class="boxprojects">
+        <a href="#" style="font-family: W95FA" id="myButton">Coding Projects</a>
+      </div>
+    
+      <div class="boxexercises">
+        <a href="https://www.figma.com/deck/X0tSzd2vt9l3nv5HANSVvL/Portfolio?node-id=1-42&t=kRlbB0q2rAbml9eG-1"
+        target="_blank"
+        style="font-family: W95FA;">
+       Portfolio
+     </a>
+      </div>
+    
+      <div class="boxp5">
+        <a href="https://editor.p5js.org/wessel3sarah/sketches" style="font-family: W95FA">P5.js</a>
+      </div>
+    
+      <div class="boxportfolio">
+        <a href="https://9jkzzl.csb.app/exercises/index.html"
+        id="myButton4" style="font-family: W95FA">Aisle K-12: School Safety</a>
+      </div>
+    
+      <!-- ✅ MOVED HERE (THIS IS THE FIX) -->
+      <div class="containerclick">
+        <div class="clickprojects" id="myProjects">
+          <div class="pick10box">
+            <a href="https://9jkzzl.csb.app/projects/pick-10/index.html">Pick10</a>
+          </div>
+    
+          <div class="boxmaxims">
+            <a href="https://sarahwessel-design.github.io/home/projects/maxims/index.html">Maxims</a>
+          </div>
+    
+          <div class="boxgenerative">
+            <a href="https://sarahwessel-design.github.io/home/projects/generative-posters/index.html">Patches</a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+   
+ 
+</body>
+</html>

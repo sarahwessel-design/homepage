@@ -1,0 +1,547 @@
+
+@media (max-width: 768px) {
+
+  .sidebar {
+    display: none; /* 🔥 THIS is what you were missing */
+
+  }
+
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sidebar-coupon img:hover {
+  animation: blink 0.5s infinite;
+}
+/* Keep your window from stretching weirdly */
+.window {
+  flex: 3;
+}
+.sidebar-coupon img {
+  width: 300px;
+  height:20vh;
+  display: flex;
+  flex-shrink: 0;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 10vh;
+  right: 0; 
+height:80vh;
+  background: #c0c0c0;
+  padding: 10px;
+  flex-shrink: 0; /* 👈 prevents squishing */
+  background: #c0c0c0;
+  align-self: center;
+  padding: 10px;
+  box-shadow: -2px -2px #e0dede, -2px 0 #e0dede, 0 -2px #e0dede,
+    -4px -4px #f9eeff, -2px 0 white, 0 -2px white, 2px 2px #818181,
+    0 2px #818181, 2px 0 #818181, 2px -2px #e0dede, -2px 2px #818181,
+    -4px 2px white, -4px 4px black, 4px 4px black, 4px 0 black, 0 4px black,
+    2px -4px white, 4px -4px black;
+  z-index:300;
+}
+
+/* Ad boxes */
+.sidebar-coupon {
+  height:20vh;
+  width: 300px;
+  background: #c0c0c0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid;
+  border-color: #ffffff #808080 #808080 #ffffff;
+}
+
+body {
+    background-image: url("backgroundimg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    min-height: 100dvh; /* important */
+  overflow-x: hidden; 
+  overflow-y: hidden;/* 🔥 prevents sideways scroll */
+}
+
+.window {
+  top: 12%;
+left:10%;
+  align-self: center;
+  position:absolute;
+  x flex: 1;              /* 👈 allow sharing space */
+  min-width: 20vw;     /* 👈 keeps your layout intact */
+  max-width: 50vw; /* 👈 THIS is the fix */
+  height: 80vh;
+  max-height: 630px;
+  display: flex;
+  flex-direction: column;
+  background: #c0c0c0;
+  box-shadow: -2px -2px #e0dede, -2px 0 #e0dede, 0 -2px #e0dede,
+    -4px -4px #f9eeff, -2px 0 white, 0 -2px white, 2px 2px #818181,
+    0 2px #818181, 2px 0 #818181, 2px -2px #e0dede, -2px 2px #818181,
+    -4px 2px white, -4px 4px black, 4px 4px black, 4px 0 black, 0 4px black,
+    2px -4px white, 4px -4px black;
+  box-sizing: border-box;
+}
+
+/* Title bar */
+.title-bar {
+  font-family:W95FA;
+  background: linear-gradient(to right, navy, #1084d0);
+  color: white;
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.title-buttons button {
+  font-family:W95FA;
+  font-family:W95FA;
+  height:20px;
+
+  margin-left: 2px;
+  background: #c0c0c0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 🔥 THIS centers vertically */
+  justify-content:center;
+  border: 2px solid;
+  border-color: white black black white;
+}
+
+/* Menu bar */
+.menu-bar {
+  padding: 4px;
+  border-bottom: 2px solid gray;
+}
+
+.menu-bar span {
+  margin-right: 15px;
+  cursor: default;
+}
+
+/* Content */
+.content {
+  font-family:W95FA;
+  padding: 20px;
+  height: 60vh;
+  text-align: center;
+  background: #c0c0c0;
+}
+
+.content img {
+  max-width: 100%;
+  max-height: 100%;
+  border: 2px inset gray;
+  justify-content: center;
+}
+
+/* Status bar */
+.status-bar {
+  font-family:W95FA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+  border-top: 2px solid white;
+  background: #c0c0c0;
+}
+.tab-content {
+  font-family:W95FA;
+  display: none;
+  visibility: hidden;
+  overflow: auto;
+}
+
+.tab-content.active {
+  display: flex;
+  visibility: visible;
+}
+
+#instagram {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.tab-content:not(.active) {
+  pointer-events: none;
+}
+.status-bar button {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: white black black white;
+  padding: 2px 8px;
+}
+
+.status-bar button:active {
+  border-color: black white white black;
+}
+
+#status-text {
+  font-family:W95FA;
+  font-size: 12px;
+}
+/* Tabs bar */
+.tabs {
+  display: flex;
+  font-family:W95FA;
+  background: #c0c0c0;
+  padding: 4px 4px 0 4px;
+}
+
+/* Individual tabs */
+.tab {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: white black black white;
+  padding: 4px 10px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+/* Active tab (connected to panel) */
+.tab.active {
+  border-bottom: none;
+  background: #c0c0c0;
+  position: relative;
+  top: 2px;
+}
+
+.tab-content {
+  font-family:W95FA;
+  display: none;
+  padding: 20px;
+  flex: 1;
+  padding: 10px;
+  overflow: hidden;
+  background: #c0c0c0;
+  border-top: 2px solid white;
+  border-bottom: 2px solid #818181;
+
+  justify-content: center;
+  align-items: center;
+}
+
+/* Active tab */
+.tab-content.active {
+  display: block; /* <-- THIS is the key fix */
+}
+
+.panel-frame {
+  width: 100%;
+  height: 100%;
+  background: #c0c0c0;
+
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid #818181;
+  border-bottom: 2px solid #818181;
+
+  padding: 12px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: auto;
+}
+
+#images {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#images.active {
+  display: flex;
+}
+/* Textarea styling */
+textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+  border: 2px inset gray;
+  font-family: Tahoma, sans-serif;
+}
+
+.description-text {
+  font-family:W95FA;
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 2px inset gray;
+  background: white;
+  font-size: 18px;
+  line-height: 1.4;
+}
+#description {
+  font-family:W95FA;
+  padding: 16px;
+}
+
+.description-text p {
+  margin-bottom: 12px;
+}
+
+/* Image styling */
+#viewer {
+  max-width: 100%;
+  max-height: 100%;
+  border: 2px inset gray;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+
+  /* CENTER EVERYTHING */
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100dvh;
+    margin: 0;
+
+    overflow: hidden; /* optional */
+  }
+
+  /* 🔥 OVERRIDE DESKTOP WINDOW */
+  .window {
+    position: relative !important;  /* CRITICAL FIX */
+    top: auto !important;
+    left: auto !important;
+
+    width: 95vw;
+    height: 85vh;
+
+    max-width: 100%;
+    max-height: 100vh;
+
+    margin: 0;
+  }
+  /* Make content scroll naturally */
+  .tab-content {
+    height: 70vh;
+    overflow: visible;
+  }
+
+  /* IMAGE fills screen width */
+  #viewer {
+    width: 100%;
+    height: auto;
+  }
+
+  /* STATUS BAR stays visible + compact */
+  .status-bar {
+    font-size: 12px;
+  }
+
+  /* 🔥 SIDEBAR becomes horizontal strip */
+
+  /* Typography */
+  .tab {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .description-text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+
+  /* Sidebar container */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    padding: 6px;
+
+    display: flex;
+    flex-direction: column; /* stack nicely */
+    gap: 8px;
+  }
+
+  /* Title bar (Advertisements header) */
+  .sidebar .title-bar {
+    font-size: 12px;
+    padding: 3px 6px;
+    height: auto; /* 🔥 removes thick bar */
+  }
+
+  /* Coupon boxes */
+  .sidebar-coupon {
+    width: 100%;        /* 🔥 no fixed 300px */
+    height: auto;       /* 🔥 remove 20vh */
+    padding: 6px;
+    margin: 5px 0;
+  }
+
+  /* Images inside coupons */
+  .sidebar-coupon img {
+    width: 100%;
+    height: auto;       /* 🔥 prevents stretching */
+    object-fit: contain;
+  }
+}
+@media (max-width: 768px) {
+
+  .win95-error {
+    position: fixed;              /* 🔥 better for mobile */
+    width: 80vw;                  /* responsive width */
+    max-width: 320px;             /* keeps Win95 feel */
+    height: 20vw;  
+    min-width: 120px;                 /* let content define height */
+    transform: translate(-50%, -50%);
+
+    padding-top: 4px;
+  }
+
+  .window-title {
+    height: 28px;                 /* slightly smaller */
+    line-height: 28px;
+    font-size: 14px;
+    cursor: default;              /* 🔥 dragging sucks on mobile */
+  }
+
+  .window-content {
+    text-align: center;        /* ✅ centers text horizontally */
+
+    display: flex;             /* ✅ enables flex */
+    align-items: center;       /* ✅ vertical center */
+    justify-content: center;   /* ✅ horizontal center */
+  
+    height: calc(100% - 90px); font-size: 10px;
+    gap: 8px;                /* remove fixed calc */
+    padding: 10px;
+  }
+
+  .error-icon {
+    width: 50px;                  /* smaller icon */
+    height: 50px;
+  }
+
+  .window-buttons {
+    margin: 10px 0;
+  }
+
+  .ok-btn {
+    width: 80px;                  /* bigger tap target */
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .buttonx {
+    padding: 4px 8px;
+  }
+}
+.win95-error {
+  position: absolute;
+  z-index: 600;
+  width: 400px;
+  height: 200px;
+  padding-top: 4px;
+
+  background: #c0c0c0;
+  color: rgb(10, 10, 10);
+ box-shadow:
+    -2px -2px #e0dede, -2px 0 #e0dede, 0 -2px #e0dede,
+    -4px -4px #f9eeff, -2px 0 white, 0 -2px white,
+    2px 2px #818181, 0 2px #818181, 2px 0 #818181,
+    2px -2px #e0dede, -2px 2px #818181,
+    -4px 2px white, -4px 4px black,
+    4px 4px black, 4px 0 black, 0 4px black,
+    2px -4px white, 4px -4px black;
+
+  box-sizing: border-box;
+}
+.window-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 15px;
+}
+
+.error-icon {
+  right:10px;
+  width: 100px;
+  height: 100px;
+}
+
+.error-text {
+  text-align: left; /* looks more like real dialogs */
+}
+
+/* TITLE BAR */
+.window-title {
+  font-family:W95FA;
+  height: 33px;
+  line-height: 33px;
+  padding-left: 6px;
+  padding-right: 6px;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, navy, #1084d0);
+  color: white;
+
+  cursor: move;
+}
+
+/* CONTENT */
+.window-content {
+  font-family:W95FA;
+  padding: 10px;
+  font-size: 20px;
+
+  text-align: center;        /* ✅ centers text horizontally */
+
+  display: flex;             /* ✅ enables flex */
+  align-items: center;       /* ✅ vertical center */
+  justify-content: center;   /* ✅ horizontal center */
+
+  height: calc(100% - 90px); /* ✅ fills space between title + button */
+}
+
+/* BUTTON AREA */
+.window-buttons {
+  display: flex;
+  justify-content: center;  /* ✅ centers horizontally */
+  align-items: center;
+
+  margin-top: 5px;
+}
+
+/* BUTTONS */
+.ok-btn,
+.buttonx {
+  background: #c0c0c0;
+  border: 2px solid;
+  border-color: white black black white;
+  padding: 2px 8px 2px;
+  cursor: pointer;
+}
+.ok-btn{width:50px;}
+.ok-btn:active,
+.buttonx:active {
+  border-color: black white white black;
+}

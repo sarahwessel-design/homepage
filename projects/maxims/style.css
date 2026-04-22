@@ -1,0 +1,97 @@
+ .background {
+       position:fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+       Width:100%;
+      color: #ffffff;
+      background: linear-gradient( #9300DC, #9c27b0);
+
+}
+
+.svgcontainer{position:relative;
+Width:100%}
+
+.ball1{
+cursor:pointer;
+ position:relative;
+top: 12%;
+right: 0;
+bottom: 0;
+left: 20%;
+animation: fly-ball1 10s ease-in-out;
+animation-iteration-count: infinite;}
+
+
+.ball1:hover{filter:drop-shadow(0 0 0.75rem white)}
+
+
+
+.ball2{
+position:absolute;
+cursor:pointer;
+top: 50%;
+right: 0;
+bottom: 0;
+left: 35%;
+animation: fly-ball2 7s ease-in;
+animation-iteration-count: infinite;}
+
+.ball2:hover{filter:drop-shadow(0 0 0.75rem white)}
+
+.ball3{
+position:absolute;
+cursor:pointer;
+top: 10%;
+right: 0;
+bottom: 0;
+left: 60%;
+animation: fly-ball3 8s ease-in;
+animation-iteration-count: infinite;}
+
+.ball3:hover{filter:drop-shadow(0 0 0.75rem white)}
+
+@keyframes fly-ball1 {
+0% {
+  transform: rotate(0deg) translate(0,0px);
+  }
+50% {
+  transform: rotate(1deg) translate(20px,-10px);
+  } 
+75% {
+  transform: rotate(-1deg) translate(-15px,-30px);
+  }
+100% {
+  transform: rotate(0deg) translate(-5px,10px);
+  }
+}
+
+@keyframes fly-ball2 {
+0% {
+  transform: rotate(0deg) translate(0,0px);
+  }
+50% {
+  transform: rotate(2deg) translate(30px,-15px);
+  } 
+75% {
+  transform: rotate(-1.5deg) translate(-15px,-30px);
+  }
+100% {
+  transform: rotate(0deg) translate(-5px,10px);
+  }
+}
+
+@keyframes fly-ball3 {
+0% {
+  transform: rotate(0deg) translate(0,0px);
+  }
+50% {
+  transform: rotate(-1.5deg) translate(-10px,20px);
+  } 
+75% {
+  transform: rotate(5deg) translate(15px,-40px);
+  }
+100% {
+  transform: rotate(0deg) translate(-10px,10px);
+  }
+}
