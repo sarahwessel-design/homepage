@@ -67,7 +67,7 @@ $(document).ready(function () {
   const goButton = document.getElementById("GoButton");
 
   goButton.onclick = () => {
-    window.location.href = "https://9jkzzl.csb.app/projects/pick-10/bunnies/index.html";
+    window.location.href = "https://sarahwessel-design.github.io/homepage/projects/pick-10/bunnies/index.html";
   };
 
   
