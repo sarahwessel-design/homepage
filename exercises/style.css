@@ -404,12 +404,11 @@ textarea {
 
   .win95-error {
     position: fixed;              /* 🔥 better for mobile */
-    width: 80vw;                  /* responsive width */
-    max-width: 320px;             /* keeps Win95 feel */
-    height: 20vw;  
-    min-width: 120px;                 /* let content define height */
-    transform: translate(-50%, -50%);
-
+    width: 85vw;                  /* responsive width */
+    max-width: 320px; 
+    max-height: 175px;           /* keeps Win95 feel */
+    height: 10vw;  
+    min-width: 150px;                 /* let content define height */
     padding-top: 4px;
   }
 
@@ -524,6 +523,7 @@ textarea {
 
 /* BUTTON AREA */
 .window-buttons {
+  font-family:W95FA;
   display: flex;
   justify-content: center;  /* ✅ centers horizontally */
   align-items: center;
@@ -534,6 +534,7 @@ textarea {
 /* BUTTONS */
 .ok-btn,
 .buttonx {
+  font-family:W95FA;
   background: #c0c0c0;
   border: 2px solid;
   border-color: white black black white;
