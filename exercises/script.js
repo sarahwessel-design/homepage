@@ -1,11 +1,11 @@
 const images = [
-  "DSC_8136.jpg",
-  "DSC_8138.jpg",
-  "DSC_8152.jpg",
-  "DSC_8299.jpg",
-  "DSC_8334.jpg",
-  "DSC_8144.jpg",
-  "DSC_8147.jpg",
+  "DSC_8136.png",
+  "DSC_8138.png",
+  "DSC_8152.png",
+  "DSC_8299.png",
+  "DSC_8334.png",
+  "DSC_8144.png",
+  "DSC_8147.png",
 ];
 let index = 0;
 
