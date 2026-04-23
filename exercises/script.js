@@ -124,8 +124,20 @@ function createErrorWindow() {
   win.className = "win95-error";
   win.style.zIndex = zIndexCounter++;
 
-  win.style.top = Math.random() * (window.innerHeight - 200) + "px";
-  win.style.left = Math.random() * (window.innerWidth - 280) + "px";
+  const rectWidth = win.offsetWidth || 300;
+  const rectHeight = win.offsetHeight || 150;
+
+  const padding = 20;
+
+  win.style.left =
+    Math.random() * (window.innerWidth - rectWidth - padding * 2) +
+    padding +
+    "px";
+
+  win.style.top =
+    Math.random() * (window.innerHeight - rectHeight - padding * 2) +
+    padding +
+    "px";
 
   const message =
     messages[Math.min(messages.length - 1, Math.floor(idleTime / 15000))];
